@@ -1,0 +1,144 @@
+body {
+  padding: 36px 156px;
+  font-family: Montserrat, sans-serif;
+}
+
+.timer-wrapper input {
+  width: 272px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+  padding: 8px 16px;
+}
+
+.timer-wrapper input:hover {
+  border-color: #000;
+}
+.timer-wrapper input:focus {
+  border-color: #4e75ff;
+}
+
+.timer-wrapper input:disabled {
+  border-color: #808080;
+  background-color: #fafafa;
+}
+
+button {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  transition: all 0.3s ease;
+  color: #fff;
+  height: 40px;
+}
+
+button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+.timer {
+  margin-top: 32px;
+  display: flex;
+  gap: 27px;
+  color: #2e2f42;
+  font-weight: 400;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 1.6px;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* Task #2 */
+
+.form {
+  width: 360px;
+}
+
+.form label {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form input,
+.form fieldset {
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+.form input:hover,
+.form fieldset:hover {
+  border-color: #000;
+}
+.form input:focus {
+  border-color: #4e75ff;
+}
+
+.form input[type='number'] {
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  margin: 0;
+  height: 64px;
+  box-sizing: border-box;
+  padding-bottom: 8px;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+fieldset label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.form button {
+  width: 100%;
+}
