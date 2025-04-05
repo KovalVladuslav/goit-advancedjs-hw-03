@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
-      <nav>
-        <ul>
-          <li><a href="./1-timer.html">Timer</a></li>
-          <li><a href="./2-snackbar.html">Snackbar</a></li>
-        </ul>
-      </nav>
+    <main class="container">
+      <form class="search-form">
+        <input
+          class="search-input"
+          type="text"
+          name="search"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="btn">Search</button>
+      </form>
+      <div class="gallery"></div>
+      <div class="loader"></div>
     </main>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
