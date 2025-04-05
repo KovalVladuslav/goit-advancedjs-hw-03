@@ -7,7 +7,7 @@ import { renderImages } from './js/render-functions.js';
 
 const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
 
-const form = document.querySelector('.search-form');
+const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
 

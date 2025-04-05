@@ -10,11 +10,10 @@ export const renderImages = (images, container) => {
         comments,
         downloads,
       }) =>
-        `<div class="photo-card">
+        `<li class="photo-card">
           <a href="${largeImageURL}" class="photo-link">
             <img src="${webformatURL}" alt="${tags}" loading="lazy" />
-          </a>
-          <div class="info">
+            <div class="info">
             <p class="info-item">
               <span>Likes</span><span class="info-value">${likes}</span>
             </p>
@@ -28,7 +27,8 @@ export const renderImages = (images, container) => {
               <span>Downloads</span><span class="info-value">${downloads}</span>
             </p>
           </div>
-        </div>`
+          </a>
+        </li>`
     )
     .join('');
 
