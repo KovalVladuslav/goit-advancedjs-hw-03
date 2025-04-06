@@ -20,12 +20,22 @@ form.addEventListener('submit', event => {
 
   const value = data.get('search');
 
+  if (value.trim() === '') {
+    iziToast.error({
+      title: 'Error',
+      message: 'Please enter a search query.',
+      position: 'topRight',
+    });
+    return;
+  }
+
   loader.style.display = 'block';
 
   searchImages(value)
     .then(data => renderImages(data.hits, gallery))
     .then(() => {
       lightbox.refresh();
+
       if (gallery.children.length === 0) {
         iziToast.error({
           title: 'Error',
